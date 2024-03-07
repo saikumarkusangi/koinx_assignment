@@ -7,6 +7,7 @@ import Footer from '../../components/footer'
 import GetStartedCard from '../../components/getStartedcard'
 import Stats from '../../components/stats'
 import Team from '../../components/team'
+import Link from 'next/link'
 
 
 const Cryptocurrencies = ({ params }) => {
@@ -14,7 +15,7 @@ const Cryptocurrencies = ({ params }) => {
     return (
         <>
             <span className="flex items-center py-2">
-                <p className="text-slate-600 text-sm mr-2 cursor-pointer">Cryptocurrencies</p>
+                <Link href={"/"} className="text-slate-600 text-sm mr-2 cursor-pointer">Cryptocurrencies</Link>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="text-slate-600 w-4 h-4">
                     <path strokeLinecap="round" strokeLinejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
                 </svg>

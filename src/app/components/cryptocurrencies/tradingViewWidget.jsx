@@ -35,8 +35,8 @@ function TradingViewWidget({symbol}) {
   );
 
   return (
-    <div className="tradingview-widget-container w-full min-h-[50vh]" ref={container}>
-      <div className="tradingview-widget-container__widget" style={{ height: "calc(100% - 32px)", width: "100%" }}></div>
+    <div className="tradingview-widget-container w-full h-[50vh] object-cover min-h-[50vh]" ref={container}>
+      <div className="tradingview-widget-container__widget w-full object-cover h-full" ></div>
     </div>
   );
 }
